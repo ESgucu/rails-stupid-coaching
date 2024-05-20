@@ -1,10 +1,12 @@
-<form action="/answer" method="get" data-turbo="false">
-  <input type="text" name="question">
-  <input type="submit" value="Ask!">
+<div class="container">
+<form form action="/answer" method="get" data-turbo="false">
+  <div class="form-group">
+    <label for="formGroupExampleInput">Ask your question</label>
+      <input type="text" name="question">
+    <input class="btn btn-primary mb-4 mt-4" type="submit" value="Ask!">
+  </div>
 </form>
-
-
-
+</div>
 <%# //
 {
   question : questionInput

@@ -1,7 +1,25 @@
-<h1>Answer Page</h1>
-<h3>Question is:</h3>
-<p><%= @question%></p>
-<h3>Answer is:</h3>
-<p><%= @answer%></p>
 
-<%= link_to "Back to Questions", ask_path %>
+<div class="container">
+
+
+
+<div class="accordion" id="accordionPanelsStayOpenExample">
+  <h1>Answers</h1>
+  <div class="accordion-item">
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">
+        <strong><p><%= @question%></p></strong>
+      </div>
+    </div>
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+<p><%= @answer%></p>
+      </button>
+    </h2>
+      <%= link_to "Back to Questions", ask_path %>
+  </div>
+    </div>
+
+  </div>
+
+</div>
